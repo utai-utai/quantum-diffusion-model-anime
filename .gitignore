@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+
+__pycache__/
+
+*.py[cod]
+
+*$py.class
+
+# Distribution / packaging
+
+bin/
+
+build/
+
+develop-eggs/
+
+dist/
+
+eggs/
+
+lib/
+
+lib64/
+
+parts/
+
+sdist/
+
+var/
+
+wheels/
+
+*.egg-info/
+
+# Virtual Environments
+
+venv/
+
+.venv/
+
+env/
+
+ENV/
+
+# PyCharm / IDE
+
+.idea/
+
+*.iws
+
+# Environment variables
+
+.env
+
+.venv
+
+
+results/
+*.pth
