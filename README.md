@@ -55,17 +55,19 @@ The model was trained on **60,000+ anime face images** for **20 epochs**. The fo
 
 1. **Environment**:
 ```bash
-pip install torch diffusers transformers pennylane
+pip install -r requirement.txt
 
 ```
-
 
 2. **Training**:
 ```bash
-python train.py --use_quantum True --n_qubits 16
-
+python train.py
 ```
 
+3. **Inference**:
+```bash
+python sample.py
+```
 
 
 ---
