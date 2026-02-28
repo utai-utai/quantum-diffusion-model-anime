@@ -29,7 +29,7 @@ In this implementation, the input tensor classical latent features is mapped to 
 <img src="./debug/A.png" width="350" alt="Input Feature A">
 <img src="[https://cdn-icons-png.flaticon.com/512/545/545682.png](https://www.google.com/search?q=https://cdn-icons-png.flaticon.com/512/545/545682.png)" width="40" style="vertical-align:middle; margin: 0 20px;">
 <img src="./debug/B.png" width="350" alt="Quantum Transformed Feature B">
-<p><b>Figure 1:</b> Visualization of feature mapping using xxxx (PRA Conclusion Logic)</p>
+<p><b>Figure 1:</b> Visualization of feature mapping using Controled-Rotation gate (PRA Conclusion Logic)</p>
 </div>
 
 * **Encoder**: Non-linear phase encoding using $\text{arctan}(\cdot)$ to map values into $[-\pi/2, \pi/2]$.
