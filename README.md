@@ -15,15 +15,15 @@ A hybrid quantum-classical generative framework that integrates **Parametric Qua
 
 The core innovation of this model lies in the `QuantumFeedForward` module. The transition of features from the classical domain to the quantum Hilbert space follows the methodology established in my previous research:
 
-> **Reference:** *[Insert Your PRA Paper Title/Citation Here]*
+> **Reference:** *https://doi.org/10.1103/PhysRevA.111.022426*
 
 The feature transformation $\mathcal{F}: \mathbb{R}^d \rightarrow \mathbb{R}^d$ is defined by:
 
 $$|\psi\rangle = U_{PQC}(\theta) \cdot \text{Encoder}(\mathbf{x}) |0\rangle^{\otimes 16}$$
 
-### Feature Evolution: A $\rightarrow$ B
+### Feature Evolution & Avoiding Barren Plateau Structure
 
-In this implementation, the input tensor **A** (classical latent features) is mapped to output tensor **B** through the following PQC structure:
+In this implementation, the input tensor classical latent features is mapped to output tensor through the following PQC structure:
 
 <div align="center">
 <img src="./debug/A.png" width="350" alt="Input Feature A">
@@ -33,7 +33,7 @@ In this implementation, the input tensor **A** (classical latent features) is ma
 </div>
 
 * **Encoder**: Non-linear phase encoding using $\text{arctan}(\cdot)$ to map values into $[-\pi/2, \pi/2]$.
-* **PQC**: xxxx (Your specific circuit topology from the PRA paper goes here).
+* **PQC**: We've found that by using an ancilla qubit to entangle with the rotation gate, this design can prevent gradient vanishing as the number of qubits grows.
 * **Gate**: A learnable scalar $\lambda$ controls the quantum contribution: $y = \text{Classical}(x) + \lambda \cdot \text{Quantum}(x)$.
 
 ---
